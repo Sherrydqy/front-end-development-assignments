@@ -37,7 +37,18 @@ h1{
 h1 + div{
   font-size: 0.8rem;
   border-style: none;
-  padding-left: 0rem
+  padding-left: 0rem;
+  font-size:0.85rem;
+  padding:0.6rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2.5rem;
+  margin-top:2rem;
+  border-style: none;
+  border-left-style: solid;
+  border-left-color: orange;
+  border-left-width: 0.35rem;
+  background-color: rgba(255, 216, 61, 0.14);
 }
 
 h2{
@@ -53,27 +64,15 @@ li{
   margin:0.5rem;
 }
 
-div:only-child{
-  font-size:0.95rem;
-  padding:0.6rem;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 2.5rem;
-  border-style: none;
-  border-left-style: solid;
-  border-left-color: orange;
-  border-left-width: 0.35rem;
-  background-color: rgba(255, 216, 61, 0.14);
-}
-
 section:nth-child(1){
   margin-bottom: 2.5rem;
 }
 
-section:nth-child(3){
+section:nth-child(2){
   display: grid;
   grid-template-columns:5fr 3fr;
   grid-gap: 2rem;
+  margin-top: 4rem;
 }
 
 section:last-child{
@@ -85,9 +84,7 @@ img{
 }
 
 ol{
-  display:grid;
-  grid-template-columns: 10fr 1fr 10fr;
-  grid-gap: 1rem;
+  columns: 2;
 }
 
 section:last-child{
