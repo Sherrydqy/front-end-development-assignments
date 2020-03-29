@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,600,700&display=swap');
+
 body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
@@ -7,6 +11,9 @@ body {
 main{
   width:70%;
   margin:0 auto;
+  display:grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-gap: 0.2rem;
 }
 
 p, li{
@@ -65,18 +72,37 @@ li{
 }
 
 section:nth-child(1){
+  grid-column-start:1;
+  grid-column-end:9;
   margin-bottom: 2.5rem;
 }
 
 section:nth-child(2){
-  display: grid;
-  grid-template-columns:5fr 3fr;
-  grid-gap: 2rem;
-  margin-top: 4rem;
+  grid-column-start:1;
+  grid-column-end:6;
 }
 
-section:last-child{
+section:nth-child(3){
+  grid-column-start:6;
+  grid-column-end:9;
+  margin-left: 2rem;
+}
+
+section:nth-child(4){
+  grid-column-start:1;
+  grid-column-end:9;
   margin-top: 2rem;
+  padding: 1rem;
+  border-top: 0.15rem solid orange;
+}
+div:nth-child(5){
+  display:none;
+}
+div:nth-child(6){
+  display:none;
+}
+div:nth-child(7){
+  display:none;
 }
 
 img{
@@ -85,11 +111,6 @@ img{
 
 ol{
   columns: 2;
-}
-
-section:last-child{
-  padding: 1rem;
-  border-top: 0.15rem solid orange;
 }
 
 ol > li{
@@ -123,4 +144,182 @@ header > p{
   font-size: 6rem;
   line-height: 10rem;
   margin:0;
+}
+
+/* Stylesheet for Mobile */
+
+/* Stylesheet for Tablet */
+
+/* Stylesheet for print */
+@media print{
+  body{
+    font-size: 12pt;
+    font-family: 'EB Garamond', serif;
+  }
+
+  p, li{
+    margin:0;
+    color:black;
+  }
+
+  header{
+    display: none;
+  }
+
+  footer{
+    display: none;
+  }
+
+  main{
+    width: 95%;
+    margin: 0.05in auto;
+    grid-template-rows: 30% 19% 2% 49%;
+    grid-row-gap: 0.4in;
+  }
+
+
+  img{
+    margin-top:0.5in;
+    max-width:80%;
+  }
+
+  img + p{
+    font-size: 8pt;
+    color:rgba(100, 100, 100, 0.8);
+    margin-left:0;
+    margin-top:0;
+  }
+
+  a:link{
+    color:rgb(150, 150, 150);
+  }
+  a:visited{
+    color:rgb(150, 150, 150);
+  }
+  a:hover{
+    color:rgb(150, 150, 150);
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a[href^="http"]::after{
+    content: " ("attr(href)")";
+    font-size: 8pt;
+  }
+
+  h1{
+      font-size:20pt;
+      margin-bottom:0.2in;
+      margin-top:0;
+  }
+  h1 + div{
+    font-size: 10pt;
+    display:block;
+    padding:0;
+    margin:0;
+    margin-bottom: 0in;
+    margin-top:0.2in;
+    border:none;
+    background-color: white;
+  }
+  div > p{
+    margin-top:0.1in;
+    margin-bottom:0.05in;
+  }
+
+  h2{
+      font-size:16pt;
+      margin-top:0;
+  }
+
+  ul{
+    padding-left:0.2in;
+  }
+
+  ol{
+    padding:0;
+  }
+
+  li{
+    margin:0.02in;
+  }
+
+  section:nth-child(1){
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+  }
+
+  section:nth-child(2){
+    grid-column-start:5;
+    grid-column-end:9;
+    grid-row-start:1;
+    grid-row-end:2;
+  }
+
+  section:nth-child(3){
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row-start:2;
+    grid-row-end:3;
+    margin-left: 0;
+  }
+
+  section:nth-child(4){
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row-start:4;
+    grid-row-end:5;
+    margin:0;
+    padding:0;
+    border:none;
+  }
+  div:nth-child(5){
+    display:block;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end:4;
+    padding:0;
+    margin:0;
+    line-height: 30pt;
+    border-top: 2pt dotted #ddd;
+    margin-top:15pt;
+    text-align: center;
+  }
+  div:nth-child(6){
+    display:block;
+    grid-row-start:3;
+    grid-row-end:4;
+    font-size: 8pt;
+    color:gray;
+    grid-column-start:3;
+    grid-column-end:7;
+    padding:0;
+    margin:0;
+    line-height: 30pt;
+    text-align: center;
+  }
+  div:nth-child(7){
+    display:block;
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:7;
+    grid-column-end:9;
+    padding:0;
+    margin:0;
+    line-height: 30pt;
+    border-top: 2pt dotted #ddd;
+    margin-top:15pt;
+  }
+
+  ol{
+    columns: 2;
+  }
+  ul{
+    columns: 3;
+  }
 }
