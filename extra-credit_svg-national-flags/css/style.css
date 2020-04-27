@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Rock+Salt&display=swap');
+
+h1{
+  font-size: 40px;
+  font-family: 'Rock Salt', cursive;
+  margin:0;
+  line-height: 120px;
+}
+
+h2{
+  font-size: 25px;
+  font-family: 'Bad Script', cursive;
+  margin-bottom: 30px;
+}
+
+body{
+  margin:0;
+}
+
+header{
+  background-color: rgba(233, 230, 239,0.6);
+  height: 120px;
+  text-align: center;
+}
+
+footer{
+  background-color: rgba(33, 30, 39,1.0);
+  height: 90px;
+  text-align: center;
+  color: white;
+}
+
+footer p{
+  font-size: 16px;
+  font-family: 'Bad Script', cursive;
+  line-height: 90px;
+  color: white;
+}
+
+main{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 24px;
+}
+
+section{
+  padding: 32px 22px;
+  text-align: center;
+}
+
+g rect{
+  stroke:none;
+}
+
+g+rect{
+  stroke:gray;
+  stroke-width: 2;
+  fill:none;
+}
+
+#colombia rect:first-child{
+  fill:rgb(255, 239, 15);
+}
+#colombia rect:nth-of-type(2){
+  fill:rgb(0, 26, 113);
+}
+#colombia rect:nth-child(3){
+  fill:rgb(212, 0, 20);
+}
+
+#mauritius rect:first-child{
+  fill:rgb(212, 0, 20);
+}
+#mauritius rect:nth-of-type(2){
+  fill:rgb(0, 26, 113);
+}
+#mauritius rect:nth-child(3){
+  fill:rgb(255, 239, 15);
+}
+#mauritius rect:nth-child(4){
+  fill:rgb(26, 133, 65);
+}
+
+#lithuania rect:first-child{
+  fill:rgb(255, 239, 15);
+}
+#lithuania rect:nth-of-type(2){
+  fill:rgb(26, 133, 65);
+}
+#lithuania rect:nth-child(3){
+  fill:rgb(212, 0, 20);
+}
+
+#denmark>rect{
+  stroke:gray;
+  stroke-width: 2;
+  fill:rgb(212, 0, 20);
+}
+#denmark g>rect:first-child{
+  fill:rgb(255, 255, 255);
+}
+#denmark g>rect:nth-of-type(2){
+  fill:rgb(255, 255, 255);
+}
+#denmark g+rect{
+  stroke:gray;
+  stroke-width: 2;
+  fill:none;
+}
+
+#jamaica rect:first-child{
+  stroke:gray;
+  stroke-width: 2;
+  fill:rgb(0, 0, 0);
+}
+#jamaica g>polygon:nth-child(1){
+  fill:rgb(17, 106,43);
+}
+#jamaica g>polygon:nth-child(2){
+  fill:rgb(17, 106,43);
+}
+#jamaica g>polygon:nth-child(3){
+  fill:rgb(255, 239, 15);
+}
+#jamaica g>polygon:nth-child(4){
+  fill:rgb(255, 239, 15);
+}
+
+#southafrica rect:first-child{
+  stroke:gray;
+  stroke-width: 2;
+  fill:rgb(6, 53, 9);
+}
+#southafrica g>polygon:nth-child(2n+1){
+  fill: rgb(255, 255, 255);
+}
+#southafrica g>polygon:nth-child(2){
+  fill: rgb(212, 0, 11);
+}
+#southafrica g>polygon:nth-child(4){
+  fill: rgb(18, 9, 104);
+}
+#southafrica g>polygon:nth-child(6){
+  fill: rgb(0, 0, 0);
+}
+#southafrica g>polygon:nth-child(5){
+  fill: rgb(255, 239, 15);
+}
