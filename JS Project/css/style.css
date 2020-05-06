@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Jost:ital,wght@0,300;0,600;1,300;1,400&display=swap');
+
+
+html{
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-size: 3rem;
+  font-family: 'Audiowide', cursive;
+}
+
+svg{
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+  display: inline-block;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear; /* Firefox 4 */
+  -webkit-transition: all 1s linear; /* Safari 和 Chrome */
+  -o-transition: all 1s linear; /* Opera */
+}
+
+path{
+  fill: rgb(74, 0, 202);
+  transition: all 1s linear;
+  -moz-transition: all 1s linear; /* Firefox 4 */
+  -webkit-transition: all 1s linear; /* Safari 和 Chrome */
+  -o-transition: all 1s linear; /* Opera */
+}
+
+main{
+  width:80%;
+  min-height:590px;
+  margin:2rem auto;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+input{
+  text-align: center;
+  margin: 0.4rem auto;
+  height:3.5rem;
+  width:4rem;
+  font-size: 2.2rem;
+}
+label{
+  color: #666666;
+}
+
+#p_answer{
+  color: rgb(151, 204, 4);
+  line-height: 10rem;
+  font-size: 8rem;
+  font-weight: 600;
+  display:none;
+  margin:0;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear; /* Firefox 4 */
+  -webkit-transition: all 1s linear; /* Safari 和 Chrome */
+  -o-transition: all 1s linear; /* Opera */
+}
+
+#userInput:disabled{
+  border: none;
+}
+
+#p_feedback1{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color:white;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear; /* Firefox 4 */
+  -webkit-transition: all 1s linear; /* Safari 和 Chrome */
+  -o-transition: all 1s linear; /* Opera */
+}
+#p_feedback2{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color:white;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear; /* Firefox 4 */
+  -webkit-transition: all 1s linear; /* Safari 和 Chrome */
+  -o-transition: all 1s linear; /* Opera */
+}
+
+#p_mock{
+  font-family: 'Audiowide', cursive;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#p_hint{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(140,140,140);
+}
+
+#submitBtn{
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear; /* Firefox 4 */
+  -webkit-transition: all 0.3s linear; /* Safari 和 Chrome */
+  -o-transition: all 0.3s linear; /* Opera */
+}
+
+#submitBtn[value="CHECK"]{
+  border: solid 0.125rem #4A00CA;
+  border-radius: 1rem;
+  height:3rem;
+  width:8rem;
+  color: #4A00CA;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#submitBtn[value="CHECK"]:hover{
+  border: solid 0.125rem #4A00CA;
+  border-radius: 1rem;
+  height:3rem;
+  width:8rem;
+  color: white;
+  background-color: #4A00CA;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#submitBtn[value="NEXT"]{
+  border: solid 0.125rem #00A21B;
+  border-radius: 4rem;
+  font-size: 1rem;
+  height:4rem;
+  width:4rem;
+  color: #00A21B;
+  cursor: pointer;
+}
+
+#submitBtn[value="NEXT"]:hover{
+  border: solid 0.125rem #00A21B;
+  border-radius: 4rem;
+  height:4rem;
+  width:4rem;
+  color: white;
+  background-color: #00A21B;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer{
+  height: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+footer p{
+  border-top-color: rgba(150, 150, 150, 0.3);
+  border-top-style: solid;
+  border-top-width: 0.05rem;
+  font-size: 16px;
+  font-family: 'Bad Script', cursive;
+  line-height: 50px;
+  margin-top: 20px;
+  color: gray;
+  margin: 0;
+}
+
+@media (max-width: 636px){
+  html{
+    font-size: 14px;
+  }
+  svg{
+    width: 13rem;
+    height: 13rem;
+  }
+
+}
+
+@media (max-width: 600px){
+  html{
+    font-size: 13px;
+  }
+  svg{
+    width: 14rem;
+    height: 14rem;
+  }
+
+}
